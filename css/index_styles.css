@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #111;
+    color: #ffe138;
+}
+
+#clock {
+    font-size: 7rem;
+    font-weight: bold;
+    background-color: #111;
+    padding: 50px;
+    border-radius: 50px;
+    border: 5px solid #ffe138;
+}
+
+.country-label{
+    color: #fff;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+#date {
+    font-size: 2rem;
+    margin-top: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+    #clock {
+        font-size: 5rem;
+    }
+    #date{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #clock {
+        font-size: 3rem;
+    }
+    #date{
+        font-size: 1rem;   
+    }
+}
